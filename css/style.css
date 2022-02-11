@@ -810,5 +810,7 @@ textarea::placeholder{
         width: 100%;
 
     }
+    .testimonial .comments .opinion .data  .text p{
+        display:none;
 
 }
