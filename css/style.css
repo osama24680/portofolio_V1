@@ -14,8 +14,11 @@
     padding: 0 15px;
 }
 
-body{
-    overflow: hidden;
+html{
+    overflow-x: hidden;
+}
+body {
+    overflow:hidden;
 }
 * {
     box-sizing: border-box;
