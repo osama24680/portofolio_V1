@@ -14,18 +14,21 @@
     padding: 0 15px;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
+
 body {
-    overflow:hidden;
+    overflow: hidden;
 }
+
 * {
     box-sizing: border-box;
     transition: .3s;
     /* overflow:hidden */
     list-style: none;
     margin: 0;
+    
 }
 
 section {
@@ -123,15 +126,21 @@ header .slider .layer .content h1 {
 }
 
 header .slider .layer .content button {
-    color: var(--green);
+    
     border-color: var(--green);
     padding: .8rem 2rem;
     transition: .5s;
 }
-
+header .slider .layer .content button a{
+    text-decoration: none;
+    color: var(--green);
+}
 header .slider .layer .content button:hover {
     color: #fff;
     background-color: var(--green)
+}
+header .slider .layer .content button a:hover {
+    color: #fff;
 }
 
 .switcher {
@@ -438,28 +447,32 @@ header .slider .layer .content button:hover {
 }
 
 /* =================================--------------------testimonial-------------------================================= */
-.testimonial .comments .opinion{
+.testimonial .comments .opinion {
     width: 48%;
-    background-color:#f8f9fa ;
+    background-color: #f8f9fa;
     padding: 50px;
 }
-.testimonial .comments .opinion .data .profileImg{
+
+.testimonial .comments .opinion .data .profileImg {
     width: 10%;
 }
 
-.testimonial .comments .opinion .data  .text{
+.testimonial .comments .opinion .data .text {
     width: 80%;
-    
+
 }
-.testimonial .comments .opinion .data  .text p{
+
+.testimonial .comments .opinion .data .text p {
     margin-bottom: 3px;
 }
-.testimonial .comments .opinion .data  .text :last-child{
+
+.testimonial .comments .opinion .data .text :last-child {
     font-size: 1rem;
-    color:#6c757d;
+    color: #6c757d;
 }
-.testimonial .comments .opinion .stars{
-    color:gold
+
+.testimonial .comments .opinion .stars {
+    color: gold
 }
 
 
@@ -484,61 +497,72 @@ header .slider .layer .content button:hover {
 
 
 /* =================================--------------------contact-------------------================================= */
-.contact{
+.contact {
     background-color: #f8f9fa;
 
 }
 
 .contact .dataContact .leftData {
-    color:#4c4d4d;
+    color: #4c4d4d;
     width: 15%;
 }
-.contact .dataContact .leftData i{
-    color:var(--green);
+
+.contact .dataContact .leftData i {
+    color: var(--green);
     margin-right: 15px;
 }
-.contact .dataContact .rightData{
+
+.contact .dataContact .rightData {
     width: 70%;
-    color:#4c4d4d;
+    color: #4c4d4d;
 }
-.contact .dataContact .rightData .inputFields div{
+
+.contact .dataContact .rightData .inputFields div {
     width: 48%;
     margin-bottom: 25px;
 }
-textarea::placeholder{
-   font-size:1.1rem;
+
+textarea::placeholder {
+    font-size: 1.1rem;
 }
-.form-control:focus{
+
+.form-control:focus {
     box-shadow: none
 }
 
-.contact .dataContact .rightData .mybuttonInput button{
+.contact .dataContact .rightData .mybuttonInput button {
     background: var(--green);
     padding: .9rem 1.7rem;
 
 }
+
 /* =================================--------------------footer-------------------================================= */
-.footer{
-    color:#252b33
+.footer {
+    color: #252b33
 }
-.footer span{
-    color:var(--green)
+
+.footer span {
+    color: var(--green)
 }
+
 .footer .contentFooter .footerLeft {
     width: 65%;
 }
+
 .footer .contentFooter ul {
     padding: 0;
     width: 25%;
-    justify-content:space-around
+    justify-content: space-around
 }
-.footer .contentFooter ul li{
+
+.footer .contentFooter ul li {
     width: 50%;
-    border-right:1px solid #ccc;
+    border-right: 1px solid #ccc;
     padding: 0 25px
 }
-.footer .contentFooter ul :last-child{
-    border:0;
+
+.footer .contentFooter ul :last-child {
+    border: 0;
 
 }
 
@@ -577,16 +601,18 @@ textarea::placeholder{
     .services .experience .item .title {
         width: 80%;
     }
-    .contact .dataContact .leftData{
+
+    .contact .dataContact .leftData {
         width: 25%;
     }
-    .testimonial .comments .opinion .data .profileImg{
+
+    .testimonial .comments .opinion .data .profileImg {
         width: 20%;
     }
-    
-    .testimonial .comments .opinion .data  .text{
+
+    .testimonial .comments .opinion .data .text {
         width: 70%;
-        
+
     }
 }
 
@@ -631,28 +657,33 @@ textarea::placeholder{
     .services .experience .item .title {
         width: 70%;
     }
-    .footer .contentFooter{
+
+    .footer .contentFooter {
         flex-direction: column;
     }
-    .footer .contentFooter .footerLeft{
+
+    .footer .contentFooter .footerLeft {
         width: 100%;
         text-align: center
     }
-    .footer .contentFooter ul{
+
+    .footer .contentFooter ul {
         width: 100%;
         text-align: center;
         justify-content: space-around
     }
-    .footer .contentFooter ul li{
+
+    .footer .contentFooter ul li {
         width: 80%;
     }
-    .testimonial .comments .opinion .data .profileImg{
+
+    .testimonial .comments .opinion .data .profileImg {
         width: 30%;
     }
-    
-    .testimonial .comments .opinion .data  .text{
+
+    .testimonial .comments .opinion .data .text {
         width: 60%;
-        
+
     }
 
 }
@@ -678,11 +709,12 @@ textarea::placeholder{
         margin: 0;
     }
 }
+
 @media(max-width:768px) {
     header .slider .layer .content h1 {
         font-size: 3.9rem
     }
-    
+
 
     .shadowText h1 {
         font-size: 5.6rem
@@ -750,42 +782,57 @@ textarea::placeholder{
         width: 100%;
 
     }
-    .contact .dataContact{
+
+    .contact .dataContact {
         flex-direction: column;
     }
-    .contact .dataContact .leftData{
+
+    .contact .dataContact .leftData {
         width: 100%;
         text-align: center;
         padding: 0px 110px;
         margin-top: 70px;
-        order:5
+        order: 5
     }
-    
-    .contact .dataContact .rightData{
+
+    .contact .dataContact .rightData {
         width: 100%;
     }
-    .contact .dataContact .rightData .inputFields div{
+
+    .contact .dataContact .rightData .inputFields div {
         width: 100%;
     }
-    .contact .dataContact .rightData h2{
+
+    .contact .dataContact .rightData h2 {
         text-align: center
     }
-    .allContent{
+
+    .allContent {
         flex-wrap: wrap;
         width: 100%;
     }
-    .allContent .opinion{
+
+    .allContent .opinion {
         width: 100%;
     }
-    .carousel-item{
+
+    .carousel-item {
         width: 100%;
     }
-  
+    .testimonial .comments .opinion{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: -7%
+    }
+
 }
 
 @media(max-width:576px) {
 
-    
+
 
     header .slider .layer .content h1 {
         font-size: 3.2rem
@@ -815,7 +862,8 @@ textarea::placeholder{
         width: 100%;
 
     }
-    .testimonial .comments .opinion .data  .text p{
-        display:none;
+
+
+
 
 }
